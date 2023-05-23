@@ -32,7 +32,7 @@ function Strype() {
 
   return (
   <Router>
-    <ThemeProvider theme={theme} >
+    <ThemeProvider theme={theme} > 
     <Box
     id='desktop-view' 
     >
