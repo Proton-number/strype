@@ -1,5 +1,5 @@
 import React from 'react'
-import './Desktop.css'
+import './Strype.css'
 import { Box,  createTheme, ThemeProvider } from '@mui/material'
 import {  BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './Home files/Home'
@@ -13,7 +13,7 @@ import Cart from './Cart files/Cart'
 
 
 
-function Desktop() {
+function Strype() {
 
     
   const theme = createTheme({
@@ -61,4 +61,4 @@ function Desktop() {
   )
 }
 
-export default Desktop
+export default Strype

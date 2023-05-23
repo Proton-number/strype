@@ -1,15 +1,13 @@
 import { useState } from 'react'
 import './App.css'
-import Desktop from './Components/Desktop/Desktop'
-import Mobile from './Components/Mobile/Mobile'
+import Strype from './Components/Main work/Strype'
 
 
 function App() {
 
   return (
     <>
-    <Desktop />
-    <Mobile />
+    <Strype />
     </>
   )
 }
