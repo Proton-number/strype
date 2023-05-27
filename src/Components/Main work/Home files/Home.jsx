@@ -2,6 +2,8 @@ import React from 'react'
 import Nav from '../Nav'
 import { Box, Paper, Typography, Stack,  createTheme, ThemeProvider, Button } from '@mui/material'
 import { motion } from 'framer-motion'
+import BottomNav from '../BottomNav'
+import { Link } from 'react-router-dom';
 
 
 function Home() {
@@ -30,6 +32,7 @@ function Home() {
         lg:'row'
      }}
      spacing={{
+         xs: 5,
         lg: 30
      }}
      sx={{
@@ -46,7 +49,7 @@ function Home() {
 
 
    <Stack 
-   spacing={{lg: 2}}
+   spacing={{xs:4,lg: 2}}
     sx={{alignItems:"center", textAlign:"center"}} 
    
     >
@@ -67,6 +70,7 @@ function Home() {
     transition={{duration:.5, delay:0.3}} 
      > Discover now latest collections </Typography>
 
+     <Link to={'/Shop'} style={{textDecoration:'none', }}>
      <Button  
      component={motion.button} 
     initial={{opacity:0, x:100}}
@@ -88,14 +92,14 @@ function Home() {
        }
        }} 
        disableElevation> Shop now</Button>
+     </Link>
 
    </Stack>
 
      </Stack>
 
      </Box>
-
-
+<BottomNav />
     </Box>
   )
 }
