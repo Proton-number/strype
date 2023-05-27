@@ -1,0 +1,23 @@
+
+
+#desktopNav{
+    display: none; 
+ } 
+
+
+
+@media screen and (min-width:599px) {
+  
+    #desktopNav{
+        display: block; 
+     } 
+
+#mobileNav{
+    display: none;
+  }
+
+  #bottomNav{
+    display: none;
+ }
+
+ }  
