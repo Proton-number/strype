@@ -35,7 +35,7 @@ function Nav() {
        <Box id="desktopNav">
        <Toolbar >
 
-<Stack spacing={{lg:4}} direction={{sm:"row",lg:'row'}} sx={{flexGrow:.7,  alignItems:'center' }}  >
+<Stack spacing={{lg:4}} direction={{sm:"row",lg:'row'}} sx={{flexGrow:{sm:1, lg:.7},  alignItems:'center' }}  >
 
    <ThemeProvider theme={theme}>
    <Box>
@@ -47,7 +47,7 @@ function Nav() {
 
 <Stack
  direction='row'
- spacing={{lg:10}}
+ spacing={{sm:4,lg:10}}
  sx={{alignItems:"center"}}
 >
 

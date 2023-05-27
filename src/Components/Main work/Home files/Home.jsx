@@ -33,6 +33,7 @@ function Home() {
      }}
      spacing={{
          xs: 5,
+         sm:0,
         lg: 30
      }}
      sx={{
@@ -49,7 +50,7 @@ function Home() {
 
 
    <Stack 
-   spacing={{xs:4,lg: 2}}
+   spacing={{xs:4,sm:2,lg: 2}}
     sx={{alignItems:"center", textAlign:"center"}} 
    
     >
@@ -85,7 +86,8 @@ function Home() {
        borderColor:"yellow",
        fontSize:"1.2em",
        width:{
-        lg: "25%"
+        xs:"100%",
+        lg: "100%"
        },
        padding:{
         lg:"12px"
