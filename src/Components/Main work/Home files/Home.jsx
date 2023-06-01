@@ -14,6 +14,7 @@ function Home() {
   return (
     <Box >
       <Nav />
+      
 
      <Box
     
@@ -46,7 +47,17 @@ function Home() {
      initial={{opacity:0, x:-100}}
      animate={{opacity:1, x: 0}}
      transition={{duration:.5, delay:0.2}} 
-     sx={{width:'400px', height:'400px', backgroundColor:'blue', borderRadius:"50%"}} />
+     sx={{
+      width:{
+        xs:"300px",
+        lg:"400px"
+      },
+      height:{
+        xs:"300px",
+        lg:"400px"
+      },
+      backgroundColor:'blue',
+       borderRadius:"50%"}} />
 
 
    <Stack 
