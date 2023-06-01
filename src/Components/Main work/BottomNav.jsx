@@ -1,8 +1,12 @@
 import React, {useState} from 'react'
-import { Box, BottomNavigation, BottomNavigationAction } from '@mui/material'
+import { Box, Stack, IconButton, Typography } from '@mui/material'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import PersonIcon from '@mui/icons-material/Person';
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+
+
 
 function BottomNav() {
     const [value, setValue] = useState(0);
@@ -15,18 +19,65 @@ function BottomNav() {
 
   return (
     <Box id="bottomNav">
-        <BottomNavigation  sx={{width: "100%", position:"absolute", left:"0px",bottom:"0px"}} value={value} onChange={handleChange} showLabels >
+        <Stack 
+        direction="row" 
+        sx={{
+          // padding:"5px",
+          justifyContent:"space-around",
+           backgroundColor:"white", 
+           width: "100%", 
+           position:"absolute", 
+           left:"0px",
+           bottom:"0px"
+           }}  >
       
 
-      <BottomNavigationAction label='Home' icon={<ShoppingCartIcon/>} />
+    
    
-      <BottomNavigationAction label='Wishlist' icon={<FavoriteIcon/>} />
+   <Link to={'/Cart'} style={{textDecoration:'none'}}>
+    <IconButton 
+    component={motion.button}
+  whileHover={{color:"blue", scale:1.2}}
+    style={{ 
+      display: 'flex', 
+      flexDirection: 'column', 
+      alignItems: 'center' 
+      }}>
+    <ShoppingCartIcon />
+    <Typography variant="body2">Cart</Typography>
+    </IconButton>
+       </Link>
+
+       <Link to={'/WishList'} style={{textDecoration:'none'}}>
+        <IconButton 
+         component={motion.button}
+         whileHover={{color:"blue", scale:1.2}}
+        style={{ 
+          display: 'flex', 
+          flexDirection: 'column', 
+          alignItems: 'center' 
+          }}>
+          <FavoriteIcon/>
+    <Typography variant="body2">WishList</Typography>
+        </IconButton>
+       </Link>
    
-      <BottomNavigationAction label='Profile' icon={<PersonIcon/>} />
+       <Link to={'/Profile'} style={{textDecoration:'none'}}>
+        <IconButton 
+         component={motion.button}
+         whileHover={{color:"blue", scale:1.2}}
+        style={{ 
+          display: 'flex', 
+          flexDirection: 'column', 
+          alignItems: 'center' 
+          }}>
+        <PersonIcon/>
+        <Typography variant="body2">Profile</Typography>
+        </IconButton>
+       </Link>   
    
    
-   
-       </BottomNavigation>
+       </Stack>
     </Box>
   )
 }

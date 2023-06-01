@@ -1,5 +1,6 @@
 import React from 'react'
 import Nav from '../Nav'
+import BottomNav from '../BottomNav'
 
 function Contact() {
   return (
@@ -7,7 +8,7 @@ function Contact() {
         <Nav />
 
         Contact me here....
-      
+      <BottomNav />
     </div>
   )
 }

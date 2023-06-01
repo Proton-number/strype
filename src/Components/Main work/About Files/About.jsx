@@ -1,5 +1,6 @@
 import React from 'react'
 import Nav from '../Nav'
+import BottomNav from '../BottomNav'
 
 function About() {
   return (
@@ -8,6 +9,7 @@ function About() {
 
     This is about meeeeee
 
+     <BottomNav />
     </div>
   )
 }
