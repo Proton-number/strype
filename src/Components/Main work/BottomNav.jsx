@@ -37,7 +37,7 @@ function BottomNav() {
    <Link to={'/Cart'} style={{textDecoration:'none'}}>
     <IconButton 
     component={motion.button}
-  whileHover={{color:"blue", scale:1.2}}
+  whileHover={{color:"blue", scale:1.080}}
     style={{ 
       display: 'flex', 
       flexDirection: 'column', 
@@ -51,7 +51,7 @@ function BottomNav() {
        <Link to={'/WishList'} style={{textDecoration:'none'}}>
         <IconButton 
          component={motion.button}
-         whileHover={{color:"blue", scale:1.2}}
+         whileHover={{color:"blue", scale:1.080}}
         style={{ 
           display: 'flex', 
           flexDirection: 'column', 
@@ -62,20 +62,7 @@ function BottomNav() {
         </IconButton>
        </Link>
    
-       <Link to={'/Profile'} style={{textDecoration:'none'}}>
-        <IconButton 
-         component={motion.button}
-         whileHover={{color:"blue", scale:1.2}}
-        style={{ 
-          display: 'flex', 
-          flexDirection: 'column', 
-          alignItems: 'center' 
-          }}>
-        <PersonIcon/>
-        <Typography variant="body2">Profile</Typography>
-        </IconButton>
-       </Link>   
-   
+      
    
        </Stack>
     </Box>

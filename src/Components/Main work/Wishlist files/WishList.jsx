@@ -8,7 +8,16 @@ function WishList() {
   return (
     <Box>
   <Nav />
-      WishList pageeee
+
+
+     <Box
+     sx={{
+      position:"relative"
+     }}
+     >
+ WishList pageeee
+     </Box>
+
       <BottomNav />
     </Box>
   )

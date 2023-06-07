@@ -8,7 +8,14 @@ function Cart() {
   return (
     <Box>
       <Nav />
-      Cart pageee
+     
+     <Box
+     sx={{
+      position:'relative'
+     }}
+     >
+     Cart pageee
+     </Box>
 
       <BottomNav />
     </Box>
