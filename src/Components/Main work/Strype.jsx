@@ -1,6 +1,6 @@
 import React from 'react'
 import './Strype.css'
-import { Box,  createTheme, ThemeProvider } from '@mui/material'
+import { Box,  createTheme, ThemeProvider, } from '@mui/material'
 import {  BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './Home files/Home'
 import Shop from './Shop files/Shop'
@@ -8,8 +8,17 @@ import About from './About Files/About'
 import Contact from './Contact files/Contact'
 import WishList from './Wishlist files/WishList'
 import Cart from './Cart files/Cart'
+import background1 from "/src/images/image-5.jpg"
 // import secondBackground from '/src/images/image-6.jpg'
 
+const containerStyle = {
+  background: `url(${background1}) `, 
+      position:"relative",
+      minHeight:"100vh"
+};
+
+
+  
 
 
 function Strype() {
@@ -34,11 +43,13 @@ function Strype() {
     <ThemeProvider theme={theme} > 
     <Box
     id='desktop-view' 
-    sx={{
-      position:"relative",
-      background: 'url(/src/images/image-5.jpg) ', 
-      minHeight:"100vh"
-    }}
+style={containerStyle}
+    // sx={{
+    //   position:"relative",
+    //   background: 'url(/src/images/image-5.jpg) ', 
+    //   background: `${images}`,
+    //   minHeight:"100vh"
+    // }}
     >
 
 <Box component="img" sx={{backgroundImage:"url(/src/images/image-6.jpg)", width:"62%", height:"88%", position:"absolute", top:0, left:-1}} />
