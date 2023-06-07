@@ -4,9 +4,10 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { Link } from 'react-router-dom';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import PersonIcon from '@mui/icons-material/Person';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import './Strype.css'
+import { motion } from 'framer-motion';
+
 
 
 
@@ -39,7 +40,7 @@ function Nav() {
 
    <ThemeProvider theme={theme}>
    <Box>
-        <Typography variant='h3'>Strype</Typography>
+        <Typography variant='h3' sx={{cursor:"pointer"}} >Strype</Typography>
     </Box>
    </ThemeProvider>
     
@@ -51,38 +52,33 @@ function Nav() {
  sx={{alignItems:"center"}}
 >
 
-    <Link to={'/'} style={{textDecoration:'none', color:'white'}}>
+    <Link to={'/'} style={{textDecoration:'none', color:'hsl(209, 100%, 30%)'}}>
 <Typography variant='p'>Home</Typography>
     </Link>
 
 
-<Link to={'/Shop'} style={{textDecoration:'none', color:'white'}}>
+<Link to={'/Shop'} style={{textDecoration:'none', color:'hsl(209, 100%, 30%)'}}>
 <Typography variant='p'>Shop</Typography>
 </Link>
 
   
-  <Link to={'/About'} style={{textDecoration:'none', color:'white'}}>
+  <Link to={'/About'} style={{textDecoration:'none', color:'hsl(209, 100%, 30%)'}}>
   <Typography variant='p'>About us</Typography>
   </Link>
 
-<Link to={'/Contact'} style={{textDecoration:'none', color:'white'}}>
+<Link to={'/Contact'} style={{textDecoration:'none', color:'hsl(209, 100%, 30%)'}}>
 <Typography variant='p'>Contact</Typography>
 </Link>
 
-<Link  to={'/Profile'} style={{textDecoration:'none', color:'white'}}>
-<IconButton sx={{color:"white"}} aria-label="profile" >
-      < PersonIcon  />
-    </IconButton>
-</Link>
 
-    <Link  to={'/WishList'} style={{textDecoration:'none', color:'white'}}>
-    <IconButton sx={{color:"white"}} aria-label="profile" >
+    <Link  to={'/WishList'} style={{textDecoration:'none', color:'hsl(209, 100%, 30%)'}}>
+    <IconButton sx={{color:"hsl(209, 100%, 30%)"}} aria-label="WishList" label="profile" >
       < FavoriteIcon />
     </IconButton>
     </Link>
 
-    <Link  to={'/Cart'} style={{textDecoration:'none', color:'white'}}>
-    <IconButton sx={{color:"white"}} aria-label="profile" >
+    <Link  to={'/Cart'} style={{textDecoration:'none', color:'hsl(209, 100%, 30%)'}}>
+    <IconButton sx={{color:"hsl(209, 100%, 30%)"}} aria-label="Cart" >
       < ShoppingCartIcon />
     </IconButton>
     </Link>
@@ -114,24 +110,24 @@ function Nav() {
   <Drawer anchor="left" open={isDrawerOpen} onClose={() => setisDrawerOpen(false)}>
 
     <Box width='350px' textAlign='center' role='presentation' >
-      <Stack spacing={6} style={{textTransform:'uppercase', padding:'100px' }}>
+      <Stack spacing={10} style={{textTransform:'uppercase', padding:'100px' }}>
        
       <Link to={'/'} style={{textDecoration:'none', color:'black'}}>
-<Typography variant='p'>Home</Typography>
+<Typography component={motion.p} whileHover={{scale:1.2}} variant='p'>Home</Typography>
     </Link>
 
 
 <Link to={'/Shop'} style={{textDecoration:'none', color:'black'}}>
-<Typography variant='p'>Shop</Typography>
+<Typography  component={motion.p} whileHover={{scale:1.2}}  variant='p'>Shop</Typography>
 </Link>
 
   
   <Link to={'/About'} style={{textDecoration:'none', color:'black'}}>
-  <Typography variant='p'>About us</Typography>
+  <Typography  component={motion.p} whileHover={{scale:1.2}}  variant='p'>About us</Typography>
   </Link>
 
 <Link to={'/Contact'} style={{textDecoration:'none', color:'black'}}>
-<Typography variant='p'>Contact</Typography>
+<Typography  component={motion.p} whileHover={{scale:1.2}}  variant='p'>Contact</Typography>
 </Link>
        
         
