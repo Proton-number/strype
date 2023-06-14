@@ -67,7 +67,7 @@ function Nav() {
   </Link>
 
 <Link to={'/Contact'} style={{textDecoration:'none', color:'hsl(209, 100%, 30%)'}}>
-<Typography variant='p'>Contact</Typography>
+<Typography variant='p'>Contact Us </Typography>
 </Link>
 
 
@@ -127,7 +127,7 @@ function Nav() {
   </Link>
 
 <Link to={'/Contact'} style={{textDecoration:'none', color:'black'}}>
-<Typography  component={motion.p} whileHover={{scale:1.2}}  variant='p'>Contact</Typography>
+<Typography  component={motion.p} whileHover={{scale:1.2}}  variant='p'>Contact Us </Typography>
 </Link>
        
         

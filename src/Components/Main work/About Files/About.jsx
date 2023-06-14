@@ -10,7 +10,10 @@ function About() {
 
    <Box
    sx={{
-    position:"relative"
+    position:"relative",
+    padding:{
+      xs:4
+    }
    }}
    >
    This is about meeeeee

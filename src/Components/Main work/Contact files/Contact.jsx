@@ -13,6 +13,10 @@ function Contact() {
         <Box
         sx={{
           position:"relative",
+          padding:{
+            lg:10,
+            xs: 4
+          },
           textAlign:'center'
         }}
         >

@@ -22,11 +22,11 @@ function BottomNav() {
         <Stack 
         direction="row" 
         sx={{
-          // padding:"5px",
+          marginTop:"20px",
           justifyContent:"space-around",
            backgroundColor:"white", 
            width: "100%", 
-           position:"absolute", 
+           position:"fixed", 
            left:"0px",
            bottom:"0px"
            }}  >
