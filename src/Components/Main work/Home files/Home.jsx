@@ -4,9 +4,9 @@ import { Box, Paper, Typography, Stack,  createTheme, ThemeProvider, Button, Ico
 import { motion } from 'framer-motion'
 import BottomNav from '../BottomNav'
 import { Link } from 'react-router-dom';
-import img1 from "/src/images/image00011.jpeg"
-import img2 from "/src/images/image00013.jpeg"
-import img3 from "/src/images/image00018.jpeg"
+import img1 from "/src/images/strype0003.png"
+import img2 from "/src/images/strype0004.png"
+import img3 from "/src/images/strype0007.png"
 import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
 
 const images = [`${img1}`, `${img2}`, `${img3}`, ]
@@ -42,9 +42,9 @@ function Home() {
     sx={{
       position:'relative',
         display:"flex",
-        justifyContent:'center',
+        justifyContent:"center",
         padding:{
-            lg:8
+          lg:4
         }
     }}
       >
@@ -56,7 +56,7 @@ function Home() {
      spacing={{
          xs: 5,
          sm:0,
-        lg: 30
+        lg: 24
      }}
      sx={{
         alignItems:'center',
@@ -73,16 +73,11 @@ function Home() {
             alt="models"
             sx={{
               width:{
-                // xs: ,
+                 xs: "200px",
                 // sm: ,
-                lg:"370px"
+                lg:"350px"
               },
-              height:{
-                  // xs: ,
-                // sm: ,
-                lg:"500px"
-              },
-            borderRadius:"10px"
+              height:"auto"
             }}
             />
           

@@ -1,9 +1,30 @@
 import React from 'react'
 import Nav from '../Nav'
-import { Box, Paper, Typography, Stack, IconButton , createTheme, ThemeProvider, Button } from '@mui/material'
+import { Box, Grid , Paper, Typography, Stack, IconButton , createTheme, ThemeProvider, Button } from '@mui/material'
 import { motion } from 'framer-motion'
 import BottomNav from '../BottomNav'
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import jsonData from '/src/Components/Main work/data.json'
+
+
+// const prices = [
+//   "₦34,000",
+//   "₦24,000",
+//   "₦14,300",
+//   "₦42,800",
+//   "₦74,400",
+//   "₦18,000",
+//   "₦23,340",
+//   "₦25,800",
+//   "₦15,320",
+//   "₦10,230",
+//   "₦54,000",
+//   "₦74,200",
+// ]
+
+// const backgroundColors = [ ];
+
+
 
 function Shop() {
   return (
@@ -14,19 +35,25 @@ function Shop() {
     sx={{
       position:"relative",
       padding:{
+        xs: 4,
         lg:10
       }
     }}
     >
+     
+     <Grid container sx={{display:"flex", justifyContent:"center"}} spacing={3}>
+  
 
+      {jsonData.map ((item, index) => (
+        <Grid item key={index}>
+          
       <Paper
       sx={{
         padding:{
+          xs:2.2,
          lg: 3.4
         },
-        width:{
-          lg:'12%'
-        },
+       
         display:"flex",
         justifyContent:"center",
         borderRadius:"10px"
@@ -43,7 +70,7 @@ function Shop() {
          <Box
          sx={{position:"relative"}}
          >
-          <Box sx={{width:"200px", height:"200px", backgroundColor:'lightblue'}}/>
+          <Box sx={{width:"200px", height:"200px", backgroundColor: item.backgroundColors}}/>
           <IconButton 
           sx={{
             position:"absolute",
@@ -55,7 +82,7 @@ function Shop() {
          </Box>
 
          <Stack  spacing={.6} >
-          <Typography>Price:  ₦34,000</Typography>
+          <Typography>Price:  {item.prices} </Typography>
           <Typography> Sport jersey with joggers </Typography>
          </Stack>
 
@@ -92,6 +119,12 @@ function Shop() {
        
 
       </Paper>
+        </Grid>
+      ))}
+
+     </Grid>
+
+
       
    
     </Box>

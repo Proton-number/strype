@@ -1,0 +1,63 @@
+[
+    {
+      "backgroundColors": "blue",
+      "prices":  "₦34,000"
+    },
+
+    {
+      "backgroundColors": "red",
+      "prices": "₦24,000"
+    },
+
+    {
+      "backgroundColors": "pink",
+      "prices": "₦42,800"
+    },
+
+    {
+        "backgroundColors": "hsl(266, 100%, 28%)",
+        "prices": "₦14,300"
+      },
+
+      {
+        "backgroundColors": "yellow",
+        "prices":   "₦10,230"
+      },
+
+      {
+        "backgroundColors": "darkblue",
+        "prices": "₦74,400"
+      },
+
+      {
+        "backgroundColors":  "indigo",
+        "prices": "₦18,000"
+      },
+
+      {
+        "backgroundColors":  "green",
+        "prices":  "₦23,340"
+      },
+
+      {
+        "backgroundColors": "silver",
+        "prices": "₦25,800"
+      },
+
+      {
+        "backgroundColors": "lightgreen",
+        "prices":  "₦15,320"
+      },
+  
+      {
+        "backgroundColors": "orange",
+        "prices":  "₦54,000"
+      },
+
+      {
+        "backgroundColors": "brown",
+          "prices": "₦74,200"
+      }
+
+  ]
+  

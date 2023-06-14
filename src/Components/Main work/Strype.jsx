@@ -11,13 +11,6 @@ import Cart from './Cart files/Cart'
 import background1 from "/src/images/image-5.jpg"
 // import secondBackground from '/src/images/image-6.jpg'
 
-const containerStyle = {
-  background: `url(${background1}) `, 
-      position:"relative",
-      minHeight:"100vh"
-};
-
-
   
 
 
@@ -43,16 +36,12 @@ function Strype() {
     <ThemeProvider theme={theme} > 
     <Box
     id='desktop-view' 
-style={containerStyle}
-    // sx={{
-    //   position:"relative",
-    //   background: 'url(/src/images/image-5.jpg) ', 
-    //   background: `${images}`,
-    //   minHeight:"100vh"
-    // }}
+     sx={{
+      minHeight:"100vh" 
+     }}
     >
 
-<Box component="img" sx={{backgroundImage:"url(/src/images/image-6.jpg)", width:"62%", height:"88%", position:"absolute", top:0, left:-1}} />
+<Box className='left-background' component="img" sx={{backgroundImage:"url(/src/images/image-6.jpg)", width:"62%", height:"88%", position:"fixed", top:0, left:-1}} />
 
       
       <Routes>
